@@ -8,6 +8,14 @@ import Header from "components/headers/light.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
+import y1 from "images/y1.jpg";
+import y2 from "images/y2.jpg";
+import y3 from "images/y3.jpg";
+import y4 from "images/y4.jpg";
+import y5 from "images/y5.jpg";
+import y6 from "images/y6.jpg";
+import y7 from "images/y7.jpg";
+import y8 from "images/y8.jpg";
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900`;
@@ -47,11 +55,12 @@ const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
 export default ({
-  headingText = "Blog Posts",
+  headingText = "Yadah Creations",
   posts = [
     {
       imageSrc:
-        "https://i.kinja-img.com/gawker-media/image/upload/t_original/t4hmrdlnhuv213b6hcny.png",
+        // "https://i.kinja-img.com/gawker-media/image/upload/t_original/t4hmrdlnhuv213b6hcny.png",
+        y1,
       category: "Travel Tips",
       date: "April 21, 2020",
       title: "Safely Travel in Foreign Countries",
@@ -60,8 +69,37 @@ export default ({
       featured: true
     },
     {
-      imageSrc:
-        "https://i.kinja-img.com/gawker-media/image/upload/t_original/t4hmrdlnhuv213b6hcny.png",
+      imageSrc: y2,
+      category: "Travel Tips",
+      featured: false
+    },
+    {
+      imageSrc: y3,
+      category: "Travel Tips",
+      featured: false
+    },
+    {
+      imageSrc: y4,
+      category: "Travel Tips",
+      featured: false
+    },
+    {
+      imageSrc: y5,
+      category: "Travel Tips",
+      featured: false
+    },
+    {
+      imageSrc: y6,
+      category: "Travel Tips",
+      featured: false
+    },
+    {
+      imageSrc: y7,
+      category: "Travel Tips",
+      featured: false
+    },
+    {
+      imageSrc: y8,
       category: "Travel Tips",
       featured: false
     },
@@ -106,13 +144,13 @@ export default ({
   );
 };
 
-const getPlaceholderPost = () => ({
-  imageSrc:
-    "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-  category: "Travel Guide",
-  date: "April 19, 2020",
-  title: "Visit the beautiful Alps in Switzerland",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  url: "https://reddit.com"
-});
+// const getPlaceholderPost = () => ({
+//   imageSrc:
+//     "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+//   category: "Travel Guide",
+//   date: "April 19, 2020",
+//   title: "Visit the beautiful Alps in Switzerland",
+//   description:
+//     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+//   url: "https://reddit.com"
+// });
