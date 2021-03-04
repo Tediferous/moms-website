@@ -61,46 +61,44 @@ export default ({
       imageSrc:
         // "https://i.kinja-img.com/gawker-media/image/upload/t_original/t4hmrdlnhuv213b6hcny.png",
         y1,
-      category: "Travel Tips",
-      date: "April 21, 2020",
-      title: "Safely Travel in Foreign Countries",
+      title: "Hand Made Jewelry",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Foo.",
       featured: true
     },
     {
       imageSrc: y2,
-      category: "Travel Tips",
+      category: "02",
       featured: false
     },
     {
       imageSrc: y3,
-      category: "Travel Tips",
+      category: "03",
       featured: false
     },
     {
       imageSrc: y4,
-      category: "Travel Tips",
+      category: "04",
       featured: false
     },
     {
       imageSrc: y5,
-      category: "Travel Tips",
+      category: "05",
       featured: false
     },
     {
       imageSrc: y6,
-      category: "Travel Tips",
+      category: "06",
       featured: false
     },
     {
       imageSrc: y7,
-      category: "Travel Tips",
+      category: "07",
       featured: false
     },
     {
       imageSrc: y8,
-      category: "Travel Tips",
+      category: "08",
       featured: false
     },
   ]
