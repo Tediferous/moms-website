@@ -93,7 +93,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const defaultLogoLink = (
     <LogoLink href="/">
-      Yedha Yadah
+      Queeny
     </LogoLink>
   );
 

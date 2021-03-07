@@ -55,7 +55,7 @@ const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
 export default ({
-  headingText = "Yadah Creations",
+  headingText = "Queeny Creations",
   posts = [
     {
       imageSrc:

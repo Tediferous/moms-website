@@ -53,9 +53,9 @@ export default () => {
         <Divider />
         <ThreeColRow>
           <LogoContainer>
-            <LogoText>Yedha Yadah</LogoText>
+            <LogoText>Queeny</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2021 Yedha Yadah. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2021 Queeny. All Rights Reserved.</CopywrightNotice>
         </ThreeColRow>
       </Content>
     </Container>
