@@ -16,6 +16,11 @@ import y5 from "images/y5.jpg";
 import y6 from "images/y6.jpg";
 import y7 from "images/y7.jpg";
 import y8 from "images/y8.jpg";
+import y9 from "images/y9.jpg";
+import y10 from "images/y10.jpg";
+import y11 from "images/y11.jpg";
+import y12 from "images/y12.jpg";
+import y13 from "images/y13.jpg";
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900`;
@@ -63,42 +68,55 @@ export default ({
         y1,
       title: "Hand Made Jewelry",
       description:
-        "Foo.",
+        "By Queeny.",
       featured: true
     },
     {
       imageSrc: y2,
-      category: "02",
+      featured: false
+    },
+    {
+      imageSrc: y9,
       featured: false
     },
     {
       imageSrc: y3,
-      category: "03",
+      featured: false
+    },
+    {
+      imageSrc: y10,
       featured: false
     },
     {
       imageSrc: y4,
-      category: "04",
+      featured: false
+    },
+    {
+      imageSrc: y11,
       featured: false
     },
     {
       imageSrc: y5,
-      category: "05",
+      featured: false
+    },
+    {
+      imageSrc: y12,
       featured: false
     },
     {
       imageSrc: y6,
-      category: "06",
+      featured: false
+    },
+    {
+      imageSrc: y13,
       featured: false
     },
     {
       imageSrc: y7,
-      category: "07",
       featured: false
     },
     {
       imageSrc: y8,
-      category: "08",
       featured: false
     },
   ]

@@ -28,7 +28,7 @@ export default () => {
         buttonRounded={false}
         primaryButtonText="See Portfolio"
         imageSrc={y1}
-        description="Foo"
+        description="Email nicedreadlocs@gmail.com"
       />
       <Footer />
     </AnimationRevealPage>
