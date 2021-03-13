@@ -21,6 +21,13 @@ import y10 from "images/y10.jpg";
 import y11 from "images/y11.jpg";
 import y12 from "images/y12.jpg";
 import y13 from "images/y13.jpg";
+import y14 from "images/y14.jpg";
+import y15 from "images/y15.jpg";
+import y16 from "images/y16.jpg";
+import y17 from "images/y17.jpg";
+import y18 from "images/y18.jpg";
+import y19 from "images/y19.jpg";
+import y20 from "images/y20.jpg";
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900`;
@@ -72,7 +79,15 @@ export default ({
       featured: true
     },
     {
+      imageSrc: y14,
+      featured: false
+    },
+    {
       imageSrc: y2,
+      featured: false
+    },
+    {
+      imageSrc: y15,
       featured: false
     },
     {
@@ -80,7 +95,15 @@ export default ({
       featured: false
     },
     {
+      imageSrc: y16,
+      featured: false
+    },
+    {
       imageSrc: y3,
+      featured: false
+    },
+    {
+      imageSrc: y17,
       featured: false
     },
     {
@@ -88,11 +111,23 @@ export default ({
       featured: false
     },
     {
+      imageSrc: y18,
+      featured: false
+    },
+    {
       imageSrc: y4,
       featured: false
     },
     {
+      imageSrc: y19,
+      featured: false
+    },
+    {
       imageSrc: y11,
+      featured: false
+    },
+    {
+      imageSrc: y20,
       featured: false
     },
     {
