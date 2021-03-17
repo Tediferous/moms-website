@@ -9,25 +9,6 @@ import Footer from "components/footers/FiveColumnWithInputForm.js";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
 import y1 from "images/y1.jpg";
-import y2 from "images/y2.jpg";
-import y3 from "images/y3.jpg";
-import y4 from "images/y4.jpg";
-import y5 from "images/y5.jpg";
-import y6 from "images/y6.jpg";
-import y7 from "images/y7.jpg";
-import y8 from "images/y8.jpg";
-import y9 from "images/y9.jpg";
-import y10 from "images/y10.jpg";
-import y11 from "images/y11.jpg";
-import y12 from "images/y12.jpg";
-import y13 from "images/y13.jpg";
-import y14 from "images/y14.jpg";
-import y15 from "images/y15.jpg";
-import y16 from "images/y16.jpg";
-import y17 from "images/y17.jpg";
-import y18 from "images/y18.jpg";
-import y19 from "images/y19.jpg";
-import y20 from "images/y20.jpg";
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900`;
@@ -66,9 +47,14 @@ const Description = tw.div``;
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
-export default ({
-  headingText = "Queeny Creations",
-  posts = [
+function importAll(r) {
+  let images = {};
+  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('images/jewelry', false, /\.(png|jpe?g|svg)$/));
+let cards =[
     {
       imageSrc:
         // "https://i.kinja-img.com/gawker-media/image/upload/t_original/t4hmrdlnhuv213b6hcny.png",
@@ -78,83 +64,20 @@ export default ({
         "By Queeny.",
       featured: true
     },
+]
+
+for (const name in images){
+  cards.push(
     {
-      imageSrc: y14,
+      imageSrc: images[name],
       featured: false
     },
-    {
-      imageSrc: y2,
-      featured: false
-    },
-    {
-      imageSrc: y15,
-      featured: false
-    },
-    {
-      imageSrc: y9,
-      featured: false
-    },
-    {
-      imageSrc: y16,
-      featured: false
-    },
-    {
-      imageSrc: y3,
-      featured: false
-    },
-    {
-      imageSrc: y17,
-      featured: false
-    },
-    {
-      imageSrc: y10,
-      featured: false
-    },
-    {
-      imageSrc: y18,
-      featured: false
-    },
-    {
-      imageSrc: y4,
-      featured: false
-    },
-    {
-      imageSrc: y19,
-      featured: false
-    },
-    {
-      imageSrc: y11,
-      featured: false
-    },
-    {
-      imageSrc: y20,
-      featured: false
-    },
-    {
-      imageSrc: y5,
-      featured: false
-    },
-    {
-      imageSrc: y12,
-      featured: false
-    },
-    {
-      imageSrc: y6,
-      featured: false
-    },
-    {
-      imageSrc: y13,
-      featured: false
-    },
-    {
-      imageSrc: y7,
-      featured: false
-    },
-    {
-      imageSrc: y8,
-      featured: false
-    },
-  ]
+  )
+}
+
+export default ({
+  headingText = "Queeny Creations",
+  posts = cards
 }) => {
   const [visible, setVisible] = useState(7);
   const onLoadMoreClick = () => {
