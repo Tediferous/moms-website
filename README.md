@@ -1,6 +1,6 @@
 # moms-website
 
-My Mom wanted a website made so here we are :triumph:
+My Mom wanted a website so lets goooooooooooooooo
 
 ## Notes for Heroku
 
